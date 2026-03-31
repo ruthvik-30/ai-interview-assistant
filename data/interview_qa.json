@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is the difference between an array and a dynamic array?",
+    "answer": "An array has fixed size defined at allocation, while a dynamic array resizes automatically by allocating new memory and copying elements when capacity is exceeded."
+  },
+  {
+    "id": 2,
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "Explain time vs space complexity.",
+    "answer": "Time complexity measures runtime growth with input size, while space complexity measures additional memory used by the algorithm."
+  },
+  {
+    "id": 3,
+    "category": "DSA",
+    "difficulty": "Easy",
+    "question": "What is Big-O notation?",
+    "answer": "Big-O describes the upper bound of algorithm growth rate, focusing on worst-case performance."
+  },
+  {
+    "id": 4,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain how a binary heap works.",
+    "answer": "A binary heap is a complete binary tree maintaining heap property where parent is smaller (min-heap) or larger (max-heap) than children."
+  },
+  {
+    "id": 5,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is a monotonic stack used for?",
+    "answer": "It maintains elements in increasing or decreasing order and is used in problems like next greater element."
+  },
+  {
+    "id": 6,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain sliding window technique.",
+    "answer": "Sliding window maintains a subset of elements and moves boundaries to optimize subarray or substring problems in linear time."
+  },
+  {
+    "id": 7,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is topological sorting?",
+    "answer": "Topological sorting orders vertices of a DAG such that for every directed edge u\u2192v, u comes before v."
+  },
+  {
+    "id": 8,
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Explain union-find data structure.",
+    "answer": "Union-find tracks connected components using path compression and union by rank for near constant time operations."
+  },
+  {
+    "id": 9,
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "What is Kadane\u2019s algorithm?",
+    "answer": "Kadane\u2019s algorithm finds maximum subarray sum in O(n) by maintaining current and global maximum sums."
+  },
+  {
+    "id": 10,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain trie data structure.",
+    "answer": "A trie stores strings as prefix trees allowing efficient prefix-based search in O(length of word)."
+  },
+  {
+    "id": 11,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is backtracking?",
+    "answer": "Backtracking builds solutions incrementally and abandons paths when constraints are violated."
+  },
+  {
+    "id": 12,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain Floyd\u2019s cycle detection.",
+    "answer": "It uses two pointers moving at different speeds to detect cycles in linked lists."
+  },
+  {
+    "id": 13,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is memoization?",
+    "answer": "Memoization stores results of expensive recursive calls to avoid recomputation."
+  },
+  {
+    "id": 14,
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Explain segment tree.",
+    "answer": "Segment tree supports range queries and updates efficiently in O(log n) time."
+  },
+  {
+    "id": 15,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Difference between stack and heap memory?",
+    "answer": "Stack memory stores function calls and local variables; heap stores dynamically allocated objects."
+  },
+  {
+    "id": 16,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain graph adjacency list vs matrix.",
+    "answer": "Adjacency list uses less space for sparse graphs; matrix allows O(1) edge lookup but uses more space."
+  },
+  {
+    "id": 17,
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Explain Bellman-Ford algorithm.",
+    "answer": "Bellman-Ford computes shortest paths and detects negative cycles by relaxing edges V-1 times."
+  },
+  {
+    "id": 18,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is a deque?",
+    "answer": "Deque is a double-ended queue supporting insertion and deletion at both ends."
+  },
+  {
+    "id": 19,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain prefix sum array.",
+    "answer": "Prefix sum precomputes cumulative sums enabling O(1) range sum queries."
+  },
+  {
+    "id": 20,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is bit manipulation useful for?",
+    "answer": "Bit manipulation optimizes operations like checking power of two, subset generation, and toggling bits."
+  },
+  {
+    "id": 21,
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Explain LRU cache implementation.",
+    "answer": "LRU cache uses hashmap + doubly linked list to achieve O(1) get and put operations."
+  },
+  {
+    "id": 22,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain two pointer technique.",
+    "answer": "Two pointers traverse array from different ends or speeds to solve problems in linear time."
+  },
+  {
+    "id": 23,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is reservoir sampling?",
+    "answer": "Reservoir sampling selects k random items from a stream in one pass with equal probability."
+  },
+  {
+    "id": 24,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain binary lifting.",
+    "answer": "Binary lifting preprocesses ancestors for fast LCA queries in O(log n)."
+  },
+  {
+    "id": 25,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is a disjoint set?",
+    "answer": "Disjoint set tracks partitioned sets with efficient union and find operations."
+  },
+  {
+    "id": 26,
+    "category": "DSA",
+    "difficulty": "Hard",
+    "question": "Explain A* search algorithm.",
+    "answer": "A* finds shortest path using heuristic function to guide search efficiently."
+  },
+  {
+    "id": 27,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is a priority queue?",
+    "answer": "Priority queue retrieves element with highest or lowest priority efficiently using heap."
+  },
+  {
+    "id": 28,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain greedy algorithm.",
+    "answer": "Greedy algorithm makes locally optimal choices hoping to achieve global optimum."
+  },
+  {
+    "id": 29,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "What is a circular queue?",
+    "answer": "Circular queue connects end to front to efficiently utilize memory."
+  },
+  {
+    "id": 30,
+    "category": "DSA",
+    "difficulty": "Medium",
+    "question": "Explain divide and conquer.",
+    "answer": "Divide and conquer splits problem into subproblems, solves them recursively, and combines results."
+  },
+  {
+    "id": 31,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design a URL shortener.",
+    "answer": "Generate unique IDs using base62, store mapping in distributed DB, cache popular URLs, and use load balancer."
+  },
+  {
+    "id": 32,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design a scalable chat system.",
+    "answer": "Use WebSockets, message queues for reliability, horizontal scaling, and sharded storage."
+  },
+  {
+    "id": 33,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design a rate limiter.",
+    "answer": "Use token bucket algorithm with Redis counters and expiration policies."
+  },
+  {
+    "id": 34,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design Instagram feed.",
+    "answer": "Fan-out on write for active users, ranking service for personalization, caching layer for hot feeds."
+  },
+  {
+    "id": 35,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design a distributed cache.",
+    "answer": "Use consistent hashing, replication for fault tolerance, and eviction policy like LRU."
+  },
+  {
+    "id": 36,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design a notification system.",
+    "answer": "Event-driven architecture using queues, retry mechanism, and priority handling."
+  },
+  {
+    "id": 37,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design Uber backend.",
+    "answer": "Microservices for ride matching, geospatial indexing, real-time updates via pub-sub."
+  },
+  {
+    "id": 38,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design search autocomplete.",
+    "answer": "Use trie with ranking based on frequency and cache frequent prefixes."
+  },
+  {
+    "id": 39,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design video streaming platform.",
+    "answer": "Use CDN for content delivery, chunked uploads, and adaptive bitrate streaming."
+  },
+  {
+    "id": 40,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design file storage system.",
+    "answer": "Object storage with metadata DB, replication, and pre-signed URL access."
+  },
+  {
+    "id": 41,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design logging system.",
+    "answer": "Centralized logging with Kafka pipeline and indexing using Elasticsearch."
+  },
+  {
+    "id": 42,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design distributed job scheduler.",
+    "answer": "Use leader election, task queue, worker nodes, and fault recovery."
+  },
+  {
+    "id": 43,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design payment gateway.",
+    "answer": "Ensure idempotency, fraud detection, encryption, and transaction logging."
+  },
+  {
+    "id": 44,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design real-time analytics system.",
+    "answer": "Stream processing with Kafka and Spark Streaming, store aggregates in OLAP DB."
+  },
+  {
+    "id": 45,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design leaderboard system.",
+    "answer": "Use sorted sets in Redis for ranking and periodic DB persistence."
+  },
+  {
+    "id": 46,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design API gateway.",
+    "answer": "Central routing, authentication, rate limiting, and monitoring."
+  },
+  {
+    "id": 47,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design multi-tenant SaaS architecture.",
+    "answer": "Tenant isolation using separate schemas or databases and shared services."
+  },
+  {
+    "id": 48,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design feature flag system.",
+    "answer": "Central config service with caching and dynamic toggles."
+  },
+  {
+    "id": 49,
+    "category": "System Design",
+    "difficulty": "Medium",
+    "question": "Design recommendation system at scale.",
+    "answer": "Offline training pipeline with online inference service and caching."
+  },
+  {
+    "id": 50,
+    "category": "System Design",
+    "difficulty": "Hard",
+    "question": "Design distributed lock service.",
+    "answer": "Use consensus protocol like Raft or ZooKeeper style coordination."
+  },
+  {
+    "id": 51,
+    "category": "Machine Learning",
+    "difficulty": "Easy",
+    "question": "What is underfitting?",
+    "answer": "Underfitting occurs when model is too simple to capture underlying patterns."
+  },
+  {
+    "id": 52,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain bias-variance tradeoff.",
+    "answer": "Balancing underfitting and overfitting by controlling model complexity."
+  },
+  {
+    "id": 53,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is cross-validation?",
+    "answer": "Technique dividing data into folds to evaluate model robustness."
+  },
+  {
+    "id": 54,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is regularization?",
+    "answer": "Penalty added to loss to prevent overfitting."
+  },
+  {
+    "id": 55,
+    "category": "Machine Learning",
+    "difficulty": "Hard",
+    "question": "Explain backpropagation.",
+    "answer": "Uses chain rule to compute gradients and update neural network weights."
+  },
+  {
+    "id": 56,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is dropout?",
+    "answer": "Randomly deactivates neurons during training to reduce overfitting."
+  },
+  {
+    "id": 57,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain ROC curve.",
+    "answer": "Plots true positive rate vs false positive rate across thresholds."
+  },
+  {
+    "id": 58,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is precision vs recall?",
+    "answer": "Precision measures correctness of positives; recall measures coverage of actual positives."
+  },
+  {
+    "id": 59,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is F1 score?",
+    "answer": "Harmonic mean of precision and recall."
+  },
+  {
+    "id": 60,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain gradient descent variants.",
+    "answer": "Batch, stochastic, and mini-batch differ in data used per update."
+  },
+  {
+    "id": 61,
+    "category": "Machine Learning",
+    "difficulty": "Hard",
+    "question": "What is transformer architecture?",
+    "answer": "Self-attention based model enabling parallel sequence processing."
+  },
+  {
+    "id": 62,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain attention mechanism.",
+    "answer": "Computes weighted importance of input tokens dynamically."
+  },
+  {
+    "id": 63,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is batch normalization?",
+    "answer": "Normalizes layer inputs to stabilize and speed up training."
+  },
+  {
+    "id": 64,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is early stopping?",
+    "answer": "Stops training when validation loss stops improving."
+  },
+  {
+    "id": 65,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain confusion matrix.",
+    "answer": "Table showing TP, FP, TN, FN for classification evaluation."
+  },
+  {
+    "id": 66,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is data leakage?",
+    "answer": "When training data unintentionally contains information from validation/test sets."
+  },
+  {
+    "id": 67,
+    "category": "Machine Learning",
+    "difficulty": "Hard",
+    "question": "Explain vanishing gradient problem.",
+    "answer": "Gradients shrink in deep networks making training difficult."
+  },
+  {
+    "id": 68,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is ensemble learning?",
+    "answer": "Combining multiple models to improve performance."
+  },
+  {
+    "id": 69,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain random forest.",
+    "answer": "Ensemble of decision trees trained on random subsets."
+  },
+  {
+    "id": 70,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is k-means clustering?",
+    "answer": "Unsupervised algorithm grouping data by minimizing intra-cluster variance."
+  },
+  {
+    "id": 71,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "Explain PCA.",
+    "answer": "Dimensionality reduction technique projecting data to principal components."
+  },
+  {
+    "id": 72,
+    "category": "Machine Learning",
+    "difficulty": "Hard",
+    "question": "What is reinforcement learning?",
+    "answer": "Agent learns policy through rewards interacting with environment."
+  },
+  {
+    "id": 73,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is RAG in LLMs?",
+    "answer": "Retrieval-Augmented Generation retrieves external knowledge before generating response."
+  },
+  {
+    "id": 74,
+    "category": "Machine Learning",
+    "difficulty": "Medium",
+    "question": "What is embedding?",
+    "answer": "Dense vector representation capturing semantic meaning."
+  },
+  {
+    "id": 75,
+    "category": "Machine Learning",
+    "difficulty": "Hard",
+    "question": "Explain fine-tuning of LLMs.",
+    "answer": "Adapting pretrained model on domain-specific data using supervised training."
+  },
+  {
+    "id": 76,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "Explain REST architecture.",
+    "answer": "Stateless communication using HTTP methods and resource-based endpoints."
+  },
+  {
+    "id": 77,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is GraphQL?",
+    "answer": "Query language allowing clients to request specific data fields."
+  },
+  {
+    "id": 78,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "Explain ACID properties.",
+    "answer": "Atomicity, Consistency, Isolation, Durability ensure reliable transactions."
+  },
+  {
+    "id": 79,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is database indexing?",
+    "answer": "Improves query speed using structured lookup tables like B-trees."
+  },
+  {
+    "id": 80,
+    "category": "Backend",
+    "difficulty": "Hard",
+    "question": "Explain CAP theorem.",
+    "answer": "Distributed systems guarantee only two of consistency, availability, partition tolerance."
+  },
+  {
+    "id": 81,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is sharding?",
+    "answer": "Splitting database horizontally across multiple machines."
+  },
+  {
+    "id": 82,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "Explain load balancing.",
+    "answer": "Distributes traffic across servers to improve reliability."
+  },
+  {
+    "id": 83,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is connection pooling?",
+    "answer": "Reusing DB connections to reduce overhead."
+  },
+  {
+    "id": 84,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "Explain JWT authentication.",
+    "answer": "Token-based authentication containing encoded user claims."
+  },
+  {
+    "id": 85,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is caching?",
+    "answer": "Storing frequently accessed data in faster storage."
+  },
+  {
+    "id": 86,
+    "category": "Backend",
+    "difficulty": "Hard",
+    "question": "Explain eventual consistency.",
+    "answer": "System guarantees consistency over time without immediate synchronization."
+  },
+  {
+    "id": 87,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is message queue?",
+    "answer": "Asynchronous communication mechanism between services."
+  },
+  {
+    "id": 88,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "Explain microservices architecture.",
+    "answer": "Application split into independent services communicating over network."
+  },
+  {
+    "id": 89,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is Docker?",
+    "answer": "Containerization platform packaging applications with dependencies."
+  },
+  {
+    "id": 90,
+    "category": "Backend",
+    "difficulty": "Medium",
+    "question": "What is CI/CD?",
+    "answer": "Automated integration and deployment pipeline for rapid releases."
+  },
+  {
+    "id": 91,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Tell me about a challenging project.",
+    "answer": "Describe situation, actions taken, technical challenges, and measurable results."
+  },
+  {
+    "id": 92,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Describe a failure.",
+    "answer": "Explain mistake, accountability, lessons learned, and improvements made."
+  },
+  {
+    "id": 93,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Describe leadership experience.",
+    "answer": "Show how you motivated team and delivered results."
+  },
+  {
+    "id": 94,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "How do you handle tight deadlines?",
+    "answer": "Prioritize tasks, communicate tradeoffs, and focus on incremental delivery."
+  },
+  {
+    "id": 95,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Why do you want this role?",
+    "answer": "Align personal goals with company mission and impact."
+  },
+  {
+    "id": 96,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Describe conflict resolution.",
+    "answer": "Explain disagreement, communication strategy, and resolution outcome."
+  },
+  {
+    "id": 97,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "How do you learn new technologies?",
+    "answer": "Structured learning, hands-on projects, and documentation reading."
+  },
+  {
+    "id": 98,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Describe a debugging experience.",
+    "answer": "Explain issue identification, root cause analysis, and fix deployment."
+  },
+  {
+    "id": 99,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "How do you prioritize tasks?",
+    "answer": "Use impact vs urgency framework and stakeholder communication."
+  },
+  {
+    "id": 100,
+    "category": "Behavioral",
+    "difficulty": "Medium",
+    "question": "Tell me about teamwork.",
+    "answer": "Highlight collaboration, shared ownership, and successful delivery."
+  }
+]
