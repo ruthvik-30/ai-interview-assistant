@@ -24,6 +24,32 @@ A retrieval-augmented generation (RAG) project that combines a FastAPI backend, 
 - `python-dotenv`
 - `pydantic`
 
+
+## Architecture
+
+```text
+User Query
+   ↓
+Hybrid Retriever (FAISS + BM25)
+   ↓
+Reranker (Cross Encoder)
+   ↓
+ ┌───────────────┐
+ │ Context Found?│
+ └──────┬────────┘
+        │ YES
+        ↓
+   RAG (Context + LLM)
+        │
+        ↓
+     Answer
+
+        │ NO
+        ↓
+   Gemini API Direct
+        ↓
+     Answer
+
 ## Repository Structure
 
 - `app/`
@@ -91,6 +117,45 @@ The Streamlit UI will connect to the backend at `http://localhost:8000` by defau
 
 - Use the **Ask Assistant** mode to query the AI assistant for DSA, ML, or coding-related questions.
 - Use the **Mock Interview** mode to generate interview questions by topic, enter your answer, and receive an evaluation.
+
+## 🖼️ Demo
+
+### 🔍 RAG-Based Answer (Context Found)
+
+![RAG Demo](assets/rag demo.png)
+
+👉 **What’s happening here:**
+
+- The query exists in the dataset  
+- System retrieves relevant chunks using **FAISS + BM25**  
+- Reranker improves quality  
+- Gemini generates answer **grounded in retrieved context**  
+
+---
+
+### 🤖 Gemini Fallback (No Context Found)
+
+![Gemini Demo](assets/gemini api demo.png)
+
+👉 **What’s happening here:**
+
+- No relevant documents found  
+- Retrieval is skipped  
+- Gemini generates answer directly using **LLM knowledge**  
+
+---
+
+### 🎯 Mock Interview + Evaluation
+
+![Mock Interview](assets/mock interview evaluation.png)
+
+👉 **Features shown:**
+
+- Question generation (**Category + Difficulty**)  
+- User answer input  
+- AI evaluation (**score + feedback**)  
+- Suggested improved answer  
+
 
 ## Notes
 
