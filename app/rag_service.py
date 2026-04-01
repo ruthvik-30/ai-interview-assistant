@@ -18,12 +18,14 @@ class RAGService:
         # Retrieve context
         docs = self.retriever.retrieve(query)
 
-        if docs:
+        if docs and len(docs)>0:
             docs = self.reranker.rerank(query, docs)
             context = "\n\n".join([d.page_content for d in docs])
             prompt = f"""
-            Use the context to answer the question.
-            If not found, say you don't know.
+            You are a helpful AI assistant.
+
+            Use the provided context to answer the question.
+            If the context is insufficient, you may use your own knowledge.
 
             Context:
             {context}
@@ -33,7 +35,19 @@ class RAGService:
             """
         else:
             # No relevant docs → just ask
-            prompt = query
+            prompt = f"""
+            You are an expert technical interviewer.
+
+            Answer the question clearly with:
+            - Definition
+            - Key points
+            - Example (if applicable)
+
+            Do NOT say "I don't know".
+
+            Question:
+            {query}
+            """
 
         # Generate text
         response = client.models.generate_content(
