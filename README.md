@@ -49,6 +49,7 @@ Reranker (Cross Encoder)
    Gemini API Direct
         ↓
      Answer
+```
 
 ## Repository Structure
 
@@ -118,13 +119,13 @@ The Streamlit UI will connect to the backend at `http://localhost:8000` by defau
 - Use the **Ask Assistant** mode to query the AI assistant for DSA, ML, or coding-related questions.
 - Use the **Mock Interview** mode to generate interview questions by topic, enter your answer, and receive an evaluation.
 
-## 🖼️ Demo
+## Demo
 
-### 🔍 RAG-Based Answer (Context Found)
+### RAG-Based Answer (Context Found)
 
-![RAG Demo](assets/rag demo.png)
+![RAG Demo](assets/rag_demo.png)
 
-👉 **What’s happening here:**
+**What’s happening here:**
 
 - The query exists in the dataset  
 - System retrieves relevant chunks using **FAISS + BM25**  
@@ -133,11 +134,11 @@ The Streamlit UI will connect to the backend at `http://localhost:8000` by defau
 
 ---
 
-### 🤖 Gemini Fallback (No Context Found)
+### Gemini Fallback (No Context Found)
 
-![Gemini Demo](assets/gemini api demo.png)
+![Gemini Demo](assets/gemini_api_demo.png)
 
-👉 **What’s happening here:**
+**What’s happening here:**
 
 - No relevant documents found  
 - Retrieval is skipped  
@@ -145,11 +146,11 @@ The Streamlit UI will connect to the backend at `http://localhost:8000` by defau
 
 ---
 
-### 🎯 Mock Interview + Evaluation
+### Mock Interview + Evaluation
 
-![Mock Interview](assets/mock interview evaluation.png)
+![Mock Interview](assets/mock_interview_evaluation.png)
 
-👉 **Features shown:**
+**Features shown:**
 
 - Question generation (**Category + Difficulty**)  
 - User answer input  
